@@ -1,0 +1,8 @@
+@import "./variables";
+
+@mixin headerItemsFormat() {
+    display: flex;
+    width: 50%;
+    height: 80px;
+    color: $primaryColor;
+}

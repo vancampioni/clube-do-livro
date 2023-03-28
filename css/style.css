@@ -10,7 +10,7 @@ body {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #FFD2CB;
+  background-color: #ffd2cb;
 }
 
 header {
@@ -25,19 +25,60 @@ header {
 
 .header__logo {
   display: flex;
-  width: 50%;
   height: 80px;
   color: #FFD2CB;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   font-family: "Fasthand", cursive;
-  font-size: 48px;
-  border: 1px solid red;
+}
+
+.header__logo h1 {
+  font-size: 40px;
 }
 
 .header__search {
   display: flex;
-  width: 50%;
   height: 80px;
   color: #FFD2CB;
-  font-family: "Fasthand", cursive;
-  font-size: 48px;
+  width: 70%;
+  align-items: center;
+}
+
+.header__search input {
+  display: flex;
+  height: 80px;
+  color: #FFD2CB;
+  width: 60%;
+  height: 45%;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-size: medium;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.header__social {
+  display: flex;
+  list-style: none;
+}
+
+.header__images {
+  display: flex;
+  list-style: none;
+  width: 10%;
+  height: 10%;
+}
+
+.header__instagram {
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -5,3 +5,8 @@
     height: 80px;
     color: $primaryColor;
 }
+
+@mixin gridFormat() {
+    background-color: $thirdyColor;
+    border-radius: 10px;
+}

@@ -10,10 +10,9 @@
 }
 
 body {
-  display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #ffd2cb;
+  background-color: $primaryColor;
 }
 
 header {
@@ -33,11 +32,11 @@ header {
   justify-content: center;
   white-space: nowrap;
   font-family: "Fasthand", cursive;
-  //border: 1px solid red;
 }
 
 .header__logo h1 {
   font-size: 40px;
+  cursor: pointer;
 }
 
 .header__search {
@@ -65,18 +64,34 @@ input:focus {
   outline: 0;
 }
 
-.header__social {
-    display: flex;
-    list-style: none;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 70vh 40vh 10vh;
+  grid-template-areas:
+    "aside container__books"
+    "aside container__graphic"
+    "footer footer";
+    grid-gap: 10px;
+    padding: 20px;
 }
 
-.header__images {
-    display: flex;
-    list-style: none;
-    width: 10%;
-    height: 10%;
+aside {
+  grid-area: aside;
+  @include gridFormat()
 }
 
-.header__instagram {
-    font-size: 10px;
+.container__books {
+  grid-area: container__books;
+  @include gridFormat()
+}
+
+.container__graphic {
+  grid-area: container__graphic;
+  @include gridFormat()
+}
+
+footer {
+  grid-area: footer;
+  @include gridFormat()
 }
